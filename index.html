@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kairos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="script4.css">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" ><font color ="#90EE90" font-style="bold">
+          <img src="K.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Kairos</font></a>
+        
+        
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           ______________             
+           
+            
+            
+            <li class="nav-item">
+              
+              <a class="nav-link active" aria-current="page" href="index2.html"> <font color ="white">Login</font></a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index4.html"><font color ="white" >About Us</font></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link "href="user_guide.html"><font color ="white">Usage Guide</font></a>
+            </li>
+          </ul>
+         
+      <input type="checkbox" id="mode">
+        <div class="grid">
+          
+          <form class="d-flex" role="search">
+            <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit" id="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+
+    <div class="container">
+      <h1 class="my-4 text-center">Weather of <span id="cityName"></span> </h1>
+      
+            
+     <p>
+
+     </p>
+      <main class="bg-teal-400">
+        
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" >
+          <div class="col">
+            <div class="card mb-4 rounded-3 ">
+              <div class="card-header py-3 text-bg-primary border-primary ">
+                <h4 class="my-0 fw-normal">Temperature Info</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title"><span id="temp2"></span><small class="text-muted fw-dark">°C</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Minimum Temperature:  <span id ="min_temp">°C</span></li>
+                  <li>Maximum Temperature:  <span id ="max_temp">°C</span></li>
+                  
+                  
+                 
+                </ul>
+                <form action="https://www.ventusky.com/?p=32.81;73.26;6&l=temperature-2m&t=20230208/2000"><button type="submit" class="w-100 btn btn-lg btn-outline-info" ">Ventusky</button></form>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Wind Info</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title"> <span id="wind_speed2"></span><small class="text-muted fw-dark">km/h</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  
+                  <li>Wind Degrees:  <span id="wind_degrees">°</span></li>
+                  <li>Feels like:  <span id="feels_like">°C</span></li>
+                 
+                  
+                  
+                 
+                </ul>
+                <form action="https://www.windy.com/?23.677,86.950,5">
+                  <button type="submit" class="w-100 btn btn-lg btn-outline-primary"  >Windy</button>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Humidity Info</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small class="text-muted fw-dark">%</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  
+                  <li>Sunrise:  <span id="sunrise"></span></li>
+                  <li>Sunset:  <span id="sunset"></span></li>
+                </ul>
+                <form action="https://www.accuweather.com/">
+                  <button type="submit" class="w-100 btn btn-lg btn-outline-info" >AccuWeather</button>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <h2 class="display-6 text-center mb-4">Weather Chart</h2>
+    
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 0%;"></th>
+                <th style="width: 9%;">Feels Like</th>
+                <th style="width: 5%;">Humidity</th>
+                <th style="width: 9%;">Temperature</th>
+                <th style="width: 20%;">Maximum Temperature</th>
+                <th style="width: 20%;">Minimum Temperature</th>
+                <th style="width: 4%;">Sunrise</th>
+                <th style="width: 6%;">Sunset</th>
+               
+                <th style="width: 12%;">Wind Degrees</th>
+                <th style="width: 12%;">Wind Speed</th>
+              </tr>
+          
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start"id="t0">Washington, D.C.</th>
+                <td> <span id ="f1"></span></td>
+                <td> <span id ="h1"></span></td>
+                <td><span id ="tt1"></span></td>
+                <td> <span id ="min_t1"></span></td>
+                <td><span id ="max_t1"></span></td>
+                <td><span id ="sr1"></span></td>
+                <td><span id ="ss1"></span></td>
+               
+                <td><span id ="wind_deg1"></span></td>
+                <td><span id ="wind_sp1"></span></td>
+             
+
+              </tr>
+             
+            
+              <tr>
+                <th scope="row" class="text-start" id="t2">Tokyo</th>
+                <td> <span id ="f3"></span></td>
+                <td> <span id ="h3"></span></td>
+                <td><span id ="tt3"></span></td>
+                <td> <span id ="min_t3"></span></td>
+                <td><span id ="max_t3"></span></td>
+                <td><span id ="sr3"></span></td>
+                <td><span id ="ss3"></span></td>
+               
+                <td><span id ="wind_deg3"></span></td>
+                <td><span id ="wind_sp3"></span></td>
+     
+              
+              </tr>
+              
+              <tr>
+                <th scope="row" class="text-start"id="t4">Paris</th>
+                <td> <span id ="f4"></span></td>
+                <td> <span id ="h4"></span></td>
+                <td><span id ="tt4"></span></td>
+                <td> <span id ="min_t4"></span></td>
+                <td><span id ="max_t4"></span></td>
+                <td><span id ="sr4"></span></td>
+                <td><span id ="ss4"></span></td>
+               
+                <td><span id ="wind_deg4"></span></td>
+                <td><span id ="wind_sp4"></span></td>
+     
+              
+              </tr>
+              <tr>
+                <th scope="row" class="text-start"id="t5">Sydney</th>
+                <td> <span id ="f5"></span></td>
+                <td> <span id ="h5"></span></td>
+                <td><span id ="tt5"></span></td>
+                <td> <span id ="min_t5"></span></td>
+                <td><span id ="max_t5"></span></td>
+                <td><span id ="sr5"></span></td>
+                <td><span id ="ss5"></span></td>
+               
+                <td><span id ="wind_deg5"></span></td>
+                <td><span id ="wind_sp5"></span></td>
+     
+              
+               
+    
+              </tr>
+            </tbody>
+          </div>
+          </table>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+   
+</html>

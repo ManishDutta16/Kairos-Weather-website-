@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* variables */
+
+body {
+
+
+    --primary-dark: rgb(35, 38, 43);
+    @media screen and (max-width: 998px) {
+        form {
+          width: 100%;
+        }
+      }
+
+    /* css style */
+
+
+}
+
+body.dark {
+    align-items: center;
+    filter: invert(1);
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #000000, #A55C1B);
+    
+
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* https://codepen.io/aliceyt/pen/qBObwpZ */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    border-radius: 100px;
+    outline: none;
+    /* background-color: yellow; */
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 45px;
+    background-color: var(--primary-dark);
+    border-radius: 100px;
+}
+
+input[type="checkbox"]:checked:before {
+    transform: translate(100%);
+}
+
+input[type="checkbox"]:checked {
+    filter: invert(1);
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+}
+
+  
+  
