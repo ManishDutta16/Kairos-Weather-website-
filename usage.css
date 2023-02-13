@@ -23,8 +23,8 @@ body{
 
 .container2 .card{
     position: relative;
-    min-width: 650px;
-    height: 450px;
+    min-width: 700px;
+    height: 500px;
     box-shadow: inset 5px 5px 5px rgba(134, 255, 233, 0.1),
                 inset -5px -5px 15px rgba(134, 255, 233, 0.1),
                        5px 5px 15px rgba(134, 255, 233, 0.1),
